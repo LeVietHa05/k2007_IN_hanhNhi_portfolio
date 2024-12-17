@@ -27,7 +27,7 @@ export function Nav({ children }: NavProps) {
               key={link.name}
               href={link.href}
               className={clsx("text-gray-400 hover:text-gray-100 p-3", {
-                "custom-nav-active": pathname === link.href,
+                "custom-nav-active": pathname.includes(link.href.slice(1)),
               })}>
               <p>{link.name}</p>
             </Link>

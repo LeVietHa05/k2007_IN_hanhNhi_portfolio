@@ -5,8 +5,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --Primary-1: #F5E2C4;
-  --Primary-2: #5B4015
+  --Primary-1: #f5e2c4;
+  --Primary-2: #5b4015;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,7 +24,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   min-width: 1368px;
 }
-
 
 .custom-color-1 {
   color: var(--Primary-1);
@@ -57,5 +56,19 @@ body {
 }
 
 .custom-card {
-  
+}
+
+.custom-dot {
+  position: relative;
+}
+.custom-dot::before {
+  content: "";
+  width: 0.3rem;
+  height: 0.3rem;
+  background-color: var(--Primary-1);
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
 }

@@ -15,9 +15,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${montserrat.className} antialiased`}>
-        <div className="mx-auto w-11/12 md:w-3/4 lg:w-2/3 xl:w-2/3">
+      <body className={`${montserrat.className} antialiased bg-cover bg-center`}>
+        <div className="mx-auto w-11/12 md:w-3/4 lg:w-2/3 xl:w-2/3 min-h-screen">
           <Nav />
           {children}
         </div>
