@@ -95,7 +95,7 @@ const data = [
     imgAlt: "brain7",
     key: "brain7",
     width: 728,
-    height: 288,
+    height: 388,
     imgsize: [225, 232],
   },
 ];
@@ -109,7 +109,7 @@ export default function brain() {
         illustrated the human brain across various stages of evolution. 
       </div>
       <div className="brain h-[80vh] relative rounded-lg overflow-y-scroll">
-        <div className="h-[129vh]">
+        <div className="h-[130vh]">
           <div id="Vertical"></div>
 
           {data.map((stage, i) => {
@@ -117,9 +117,9 @@ export default function brain() {
               return (
                 <div
                   key={data[i].key}
-                  className="absolute inset-1/2 -translate-x-1/2"
+                  className="absolute mb-4 inset-1/2 -translate-x-1/2"
                   style={{
-                    top: `${i * 25 + 10}%`,
+                    top: `${i * 25 + 12}%`,
                     width: stage.width,
                     height: stage.height,
                   }}>
@@ -144,7 +144,7 @@ export default function brain() {
                   }}
                   key={stage.key}>
                   <div
-                    className={`absolute  top-[50%] -left-[15%] translate-x-2/3 -translate-y-1/2`}>
+                    className={`absolute  top-[50%] -left-[16%] translate-x-2/3 -translate-y-1/2`}>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="28"
@@ -176,7 +176,7 @@ export default function brain() {
                   }}
                   key={stage.key}>
                   <div
-                    className={`absolute  top-[50%] -right-[16%] -translate-x-1/2 -translate-y-1/2`}>
+                    className={`absolute  top-[50%] -right-[17%] -translate-x-1/2 -translate-y-1/2`}>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="28"
