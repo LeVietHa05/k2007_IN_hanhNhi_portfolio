@@ -21,13 +21,13 @@ export function Nav({ children }: NavProps) {
   return (
     <nav className="p-4 font-medium font-semibold fixed top-0 rounded-b-3xl custom-nav">
       <ul className="flex space-x-4">
-        {links.map((link) => {
+        {links.map((link, i) => {
           return (
             <Link
               key={link.name}
               href={link.href}
               className={clsx("text-gray-400 hover:text-gray-100 p-3", {
-                "custom-nav-active": pathname.includes(link.href.slice(1)),
+                "custom-nav-active": pathname.indexOf(link.href) >= 0 && i !== 0 || i === 0 && pathname === "/",
               })}>
               <p>{link.name}</p>
             </Link>

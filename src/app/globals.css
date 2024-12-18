@@ -72,3 +72,32 @@ body {
   transform: translate(-50%, -50%);
   border-radius: 50%;
 }
+
+
+.brain {
+  background-color: #CFB791;
+  background-image: url("../../public/background.png");
+  background-blend-mode: screen;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.braincard {
+  border-radius: 20px;
+  background:  rgba(255, 255, 255, 0.60);
+}
+
+#Vertical {
+  padding: 0 4px;
+  width: 0;
+  height: inherit;
+  background-color: var(--Primary-2);
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+.bigdot {
+  
+}

@@ -5,7 +5,7 @@ const thumbs = [
     src: "/thumb1.png",
     alt: "thumbnail 1",
     overlayText: "the Temple of Literature",
-    width: 500,
+    width: 580,
     height: 500,
     link: "/byme/temple",
   },
@@ -13,7 +13,7 @@ const thumbs = [
     src: "/thumb2.png",
     alt: "thumbnail 2",
     overlayText: "Brain evolution",
-    width: 500,
+    width: 580,
     height: 500,
     link: "/byme/brain",
   },
@@ -21,7 +21,7 @@ const thumbs = [
 
 export default function byme() {
   return (
-    <div className="p-20 flex justify-between min-h-screen my-6 items-center">
+    <div className="p-10 gap-10 flex justify-between min-h-screen my-6 items-center">
       {thumbs.map((card) => {
         return (
           <Card
