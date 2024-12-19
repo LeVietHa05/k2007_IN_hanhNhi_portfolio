@@ -21,14 +21,16 @@ export default function Card({
 }: CardProps) {
   return (
     <Link href={link}>
-       <div className={`${montserrat.className} custom-card relative rounded-lg `}>
-      <Image src={src} alt={alt} width={width} height={height} />
-      <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center hover:backdrop-blur-sm">
-        <span className={`${alice.className} custom-color-1 text-4xl font-bold`}>
-          {overlayText}
-        </span>
+      <div
+        className={`${montserrat.className} custom-card relative rounded-lg `}>
+        <Image src={src} alt={alt} width={width} height={height} />
+        <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center hover:backdrop-blur-sm">
+          <span
+            className={`${alice.className} custom-color-1 text-4xl font-bold uppercase`}>
+            {overlayText}
+          </span>
+        </div>
       </div>
-    </div>
     </Link>
   );
 }

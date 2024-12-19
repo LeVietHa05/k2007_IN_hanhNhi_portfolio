@@ -8,7 +8,7 @@ export default function Paragraph({ text, customClass }: {
 }) {
     return (
       <p
-        className={`${montserrat.className} text-base text-gray-200 leading-8 p-4 ${customClass}`}>
+        className={`${montserrat.className}  text-gray-200 leading-8 ${customClass}`}>
         {text}
       </p>
     );
