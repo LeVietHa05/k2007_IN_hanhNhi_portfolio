@@ -1,6 +1,7 @@
 import { montserrat, alice } from "./ui/fonts";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -17,7 +18,9 @@ export default function Home() {
             </p>
           </div>
           <div className="flex gap-4">
-            <div className="border p-4 rounded-lg">More about me</div>
+            <div className="border p-4 rounded-lg">
+              <Link href="#moreaboutme">More about me</Link>
+            </div>
             <div className="border p-4 rounded-lg">My resume</div>
           </div>
         </div>
@@ -40,10 +43,13 @@ export default function Home() {
           />
         </div>
         <div className="flex flex-col justify-center max-w-sm md:max-w-lg lg:max-w-xl mx-auto p-6 gap-4">
-          <h2 className={`${alice.className} text-3xl custom-color-1`}>
+          <h2
+            id="moreaboutme"
+            className={`${alice.className} text-3xl custom-color-1`}>
             Hi! Welcome to my personal portfolio.
           </h2>
-          <p className={`${montserrat.className} text-gray-200 text-xl leading-relaxed`}>
+          <p
+            className={`${montserrat.className} text-gray-200 text-xl leading-relaxed`}>
             I am currently a senior at Marie Curie Hanoi School. My passions lie
             in both science and art, and I also write a blog where I share my
             enthusiasm for the History of Human Civilization, demonology, and
