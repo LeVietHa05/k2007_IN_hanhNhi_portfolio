@@ -18,18 +18,19 @@ export function CardBrain({
   imgsize,
 }: BrainCardProps) {
   return (
-    <div className="braincard flex py-2 px-5 gap-4 absolute">
+    <div className="braincard flex items-center py-2 px-5 gap-4 absolute group h-full transition-all duration-300">
       <Image
         src={imgSrc}
         alt={imgAlt}
         width={imgsize[0]}
         height={imgsize[1]}
         className="shrink-0"></Image>
-      <div>
-        <div className={`${montserrat.className} leading-8 custom-color-2`}>
+      <div className="relative">
+        <div
+          className={`${montserrat.className} relative leading-8 custom-color-2 -bottom-20 group-hover:bottom-0 transition-all duration-300`}>
           {title}
         </div>
-        <ul className="p-4">
+        <ul className="relative p-4 opacity-0 -bottom-10 group-hover:bottom-0 transition-all duration-300 group-hover:opacity-100">
           {description.map((des, i) => {
             return (
               <li key={i} className="list-disc text-gray-700 text-sm">

@@ -85,6 +85,9 @@ body {
 
 .braincard {
   border-radius: 20px;
+  background:  rgba(255, 255, 255, 0.30);
+}
+.braincard:hover {
   background:  rgba(255, 255, 255, 0.60);
 }
 
@@ -99,5 +102,5 @@ body {
 }
 
 .bigdot {
-  
+
 }
