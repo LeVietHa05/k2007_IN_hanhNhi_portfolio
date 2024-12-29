@@ -3,6 +3,7 @@ import "./globals.css";
 import { Nav } from "./ui/nav";
 import { montserrat } from "./ui/fonts";
 import ScrollToTop from "./ui/scrollToTop";
+import Footer from "./ui/footer";
 
 export const metadata: Metadata = {
   title: "Hanh Nhi Portolio",
@@ -21,6 +22,7 @@ export default function RootLayout({
           <Nav />
           {children}
           <ScrollToTop />
+          <Footer/>
         </div>
       </body>
     </html>
