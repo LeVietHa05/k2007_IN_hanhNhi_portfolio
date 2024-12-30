@@ -6,7 +6,7 @@ import ScrollToTop from "./ui/scrollToTop";
 import Footer from "./ui/footer";
 
 export const metadata: Metadata = {
-  title: "Hanh Nhi Portolio",
+  title: "Hanh Nhi Portfolio",
   description: "You can know more about me using this website",
 };
 

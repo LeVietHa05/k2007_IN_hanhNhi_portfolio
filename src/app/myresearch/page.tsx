@@ -79,7 +79,7 @@ export default function myresearch() {
       </p>
       <div className="mt-10">
         <p className="custom-color-1 text-2xl leading-9 font-semibold">
-          Internship at
+          Internship at{" "}
           <Link href={"https://klept.vn/"} className="underline">
             National Key Laboratory of Enzyme and Protein Technology
           </Link>

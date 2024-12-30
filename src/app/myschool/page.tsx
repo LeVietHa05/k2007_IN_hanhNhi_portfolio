@@ -1,6 +1,7 @@
 import Paragraph from "../ui/paragraph";
 import Header from "../ui/header";
 import Image from "next/image";
+import { Video } from "../ui/video";
 
 export default function myschool() {
   const imgaeSets = [
@@ -59,12 +60,7 @@ export default function myschool() {
           customClass=""
           text="Nearly 1000 days at Marie Curie Hanoi School, everyday is a page in my diary. Being the class monitor and class president of E3, I gained invaluable experiences from leadership, friendship, love and spirit of unity. I sporadically felt sorrowful when facing the undisciplined attitude of my classmates. But their naughty jokes have become a part of my youth. It began with the first time we met, the first time we argued, and the first time we laughed together. Each of those moments became a precious memory in my life."
         />
-        <Image
-          src={`/myschool2.png`}
-          width={1120}
-          height={371}
-          alt="myschool 2"
-        />
+        <Video/>
         <Paragraph
           customClass=""
           text="As class president, I was often at the center of those moments, trying to guide and support my classmates. But I also learned from them as they learned from me. The ups and downs, the disagreements and reconciliations, all shaped our journey together."
