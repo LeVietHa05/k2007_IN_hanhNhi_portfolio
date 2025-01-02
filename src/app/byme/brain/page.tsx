@@ -1,5 +1,8 @@
+"use client";
+
 import Backheader from "@/app/ui/backHeader";
 import { CardBrain } from "@/app/ui/brain";
+import { useEffect } from "react";
 const data = [
   {
     title: "Common Ancestor period (5-7 million years ago)",
@@ -100,7 +103,27 @@ const data = [
   },
 ];
 
-export default function brain() {
+export default function Brain() {
+  const adjustSpecialBrainPosition = () => {
+    const verticalHeight = document.getElementById("Vertical");
+    const specialBrain = document.getElementById("specialBrain");
+    if (verticalHeight && specialBrain) {
+      specialBrain.style.top = `${verticalHeight.offsetHeight}px`;
+    }
+  };
+
+  useEffect(() => {
+    // Adjust position on initial render
+    adjustSpecialBrainPosition();
+
+    // Adjust position on window resize
+    window.addEventListener("resize", adjustSpecialBrainPosition);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", adjustSpecialBrainPosition);
+    };
+  }, []);
   return (
     <div className="my-20">
       <Backheader href="/byme" text="Brain evolution"></Backheader>
@@ -108,8 +131,8 @@ export default function brain() {
         Combining my passions for both Science and Art, I meticulously
         illustrated the human brain across various stages of evolution. 
       </div>
-      <div className="brain h-[80vh] relative rounded-lg overflow-y-scroll">
-        <div className="h-[130vh]">
+      <div className="brain h-[800px] relative rounded-lg overflow-y-scroll mb-10">
+        <div className="h-[1400px]">
           <div id="Vertical"></div>
 
           {data.map((stage, i) => {
@@ -118,7 +141,9 @@ export default function brain() {
                 <div
                   key={data[i].key}
                   className="absolute mb-4 inset-1/2 -translate-x-1/2"
+                  id="specialBrain"
                   style={{
+                    // top: `${verticalHeight}px`,
                     top: `${i * 25 + 12}%`,
                     width: stage.width,
                     height: stage.height,
