@@ -21,7 +21,6 @@ export default function Home() {
             <div className="border p-4 rounded-lg">
               <Link href="#moreaboutme">More about me</Link>
             </div>
-            <div className="border p-4 rounded-lg">My resume</div>
           </div>
         </div>
         <div className="relative -top-10 right-5">

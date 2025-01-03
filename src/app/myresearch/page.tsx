@@ -32,11 +32,11 @@ export default function myresearch() {
         <div className="flex flex-col items-center justify-center gap-8">
           <Paragraph
             customClass="leading-9 text-2xl custom-color-1 font-semibold"
-            text="Researcher & Co-Author, Ethyl acetate extract of Polyscias fruticosa accelerates neurite growth via upregulating nerve trophic factors "
+            text="Researcher & Co-Author, Identification and Evaluation of neuroprotective effect of a butanol extract from centella asiatica"
           />
           <Paragraph
             customClass="leading-9 text-xl"
-            text="From June 2023 to September 2024, I started working as a lab assistant for Dr. Nguyen Van Tru at Institute of Biotechnology of Vietnam Academy of Science and Technology.  Our research paper is currently under review of Annual Research & Review in Biology.  "
+            text="From June 2023 to September 2024, I started working as a lab assistant for Dr. Nguyen Van Tru at Institute of Biotechnology of Vietnam Academy of Science and Technology.  Our research paper is currently under review of Asian Journal of Biochemistry, Genetics and Molecular Biology"
           />
         </div>
         <div className="w-[342px] shrink-0">
